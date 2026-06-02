@@ -14,7 +14,7 @@ export default class Pixel {
     ctx.strokeRect(this.x, this.y, this.size, this.size);
   }
 
-  setColor(color) {
+  setColor(color) { 
     this.color = color;
   }
 }
