@@ -18,7 +18,7 @@ export default class Grid {
       this.pixels.push(row);
     }
   }
-
+ 
   draw(ctx) {
     ctx.clearRect(0, 0, this.cols * this.cellSize, this.rows * this.cellSize);
 
