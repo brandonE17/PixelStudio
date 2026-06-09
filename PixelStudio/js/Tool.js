@@ -7,3 +7,4 @@ export default class Tool {
     this.grid.setColor(x, y, color);
   }
 }
+  
