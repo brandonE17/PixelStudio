@@ -1,5 +1,5 @@
 import Grid from './Grid.js';
-import Tool from './Tool.js';
+import PenTool from './Tool.js';
 
 export default class App {
   constructor(root) {
