@@ -41,10 +41,23 @@ export default class Grid {
   }
 
   setColor(col, row, color) {
-    if (col < 0 || col >= this.cols || row < 0 || row >= this.rows) {
+    if (
+      col < 0 ||
+      col >= this.cols ||
+      row < 0 ||
+      row >= this.rows
+    ) {
       return;
     }
 
     this.pixels[row][col].setColor(color);
+  }
+
+  clear() {
+    for (let y = 0; y < this.rows; y++) {
+      for (let x = 0; x < this.cols; x++) {
+        this.pixels[y][x].setColor('#ffffff');
+      }
+    }
   }
 }
