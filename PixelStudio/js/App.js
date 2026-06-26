@@ -24,7 +24,7 @@ export default class App {
       const rect = this.canvas.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
-      const color = '#ff0000';
+      const color = '#000000'; 
       this.tool.paint(Math.floor(x / this.grid.cellSize), Math.floor(y / this.grid.cellSize), color);
       this.grid.draw(this.ctx);
     });
