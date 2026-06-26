@@ -6,10 +6,10 @@ export default class App {
     this.root = root;
 
     this.canvas = document.createElement('canvas');
-    this.canvas.width = 640;
+    this.canvas.width = 480;
     this.canvas.height = 480;
     this.canvas.style.border = '1px solid #333';
-    this.canvas.style.display = 'block';
+    this.canvas.style.display = 'block'; 
     this.canvas.style.margin = '20px auto';
 
     this.ctx = this.canvas.getContext('2d');
