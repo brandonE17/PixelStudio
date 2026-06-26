@@ -1,19 +1,27 @@
+import Pixel from './Pixel.js';
+
+
 export default class Grid {
   constructor(cols, rows, cellSize, defaultColor = '#ffffff') {
     this.cols = cols;
     this.rows = rows;
     this.cellSize = cellSize;
     this.pixels = [];
+ 
+  import Pixel from './Pixel.js';
+
 
     for (let y = 0; y < rows; y += 1) {
       const row = [];
       for (let x = 0; x < cols; x += 1) {
-        row.push({
-          x: x * cellSize,
-          y: y * cellSize,
-          size: cellSize,
-          color: defaultColor,
-        });
+      row.push(
+  new Pixel(
+    x * cellSize,
+    y * cellSize,
+    cellSize,
+    defaultColor
+  )
+);
       }
       this.pixels.push(row);
     }
